@@ -8,13 +8,6 @@ namespace rt
         public double Y { get; set; }
         public double Z { get; set; }
 
-        public Vector()
-        {
-            X = 0;
-            Y = 0;
-            Z = 0;
-        }
-
         public Vector(double x, double y, double z)
         {
             X = x;

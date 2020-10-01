@@ -5,12 +5,6 @@
         public Vector X0 { get; set; }
         public Vector Dx { get; set; }
 
-        public Line()
-        {
-            X0 = new Vector(0.0, 0.0, 0.0);
-            Dx = new Vector(1.0, 0.0, 0.0);
-        }
-
         public Line(Vector x0, Vector x1)
         {
             X0 = new Vector(x0);

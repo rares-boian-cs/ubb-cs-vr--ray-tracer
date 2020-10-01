@@ -8,15 +8,6 @@
         public Color Specular { get; set; }
         public double Intensity { get; set; }
 
-        public Light()
-        {
-            Position = new Vector();
-            Ambient = new Color();
-            Diffuse = new Color();
-            Specular = new Color();
-            Intensity = 0;
-        }
-
         public Light(Vector position, Color ambient, Color diffuse, Color specular, double intensity)
         {
             Position = new Vector(position);

@@ -53,11 +53,8 @@ namespace rt
         public void Render(Camera camera, int width, int height, string filename)
         {
             var background = new Color();
-            var viewParallel = (camera.Up ^ camera.Direction).Normalize();
-
             var image = new Image(width, height);
 
-            var vecW = camera.Direction * camera.ViewPlaneDistance;
             for (var i = 0; i < width; i++)
             {
                 for (var j = 0; j < height; j++)
